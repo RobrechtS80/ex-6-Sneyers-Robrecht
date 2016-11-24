@@ -22,10 +22,12 @@ function withdraw(account, amount)
 
 function getBalance(account)
 {
-    
+
     return account.balance;
 }
 
+//var balans= getBalance(); 
+//console.log(balans(lisa_acc));
 
 
 function createAccount(name, waarde)
@@ -79,7 +81,6 @@ console.log(getBalance(lisa_acc));
 
 
 /*Revisit your bank account practice
-
  Add a function that returns a anonymous function that returns the
 balance from the given account
 */
