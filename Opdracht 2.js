@@ -4,6 +4,7 @@ var accounts = [{username: "karen", balance: 10}];
 function deposit(account, amount)
 {
     account.balance = account.balance + amount;
+    
 }
 
 function withdraw(account, amount)
@@ -29,12 +30,13 @@ return account;
 }
 
 //getaccount functie
-function getAccount (username) {
+function getAccount (name) {
 	var matchedAccount;
 
 	for (var i = 0; i < accounts.length; i++) {
-		if (accounts[i].username === username) {
-			matchedAccount = accounts[i];
+		if (accounts[i].username === name) {
+			matchedAccount = accounts[i].username;
+                        console.log(accounts[i].username);
 			break;
 		}
 	}
@@ -53,3 +55,10 @@ console.log(accounts);
 var existingAccount = getAccount('karen');
 console.log(getBalance(existingAccount));
 
+
+
+/*Revisit your bank account practice
+ Add validation to the deposit and withdraw functions
+ Add a function that returns a anonymous function that returns the
+balance from the given account
+*/
