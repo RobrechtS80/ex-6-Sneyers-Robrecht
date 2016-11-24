@@ -21,10 +21,7 @@ function getBalance(account, amount)
     return account.Balance;
 }
 
-/*function createAccount(account)
- {
- accounts.push(account);
- }*/
+
 
 function createAccount(name, waarde)
 {
@@ -33,9 +30,23 @@ function createAccount(name, waarde)
     account.Balance = waarde;
     accounts.push(account);
 }
+
+//getaccount functie
+function getAccount (username) {
+	var matchedAccount;
+
+	for (var i = 0; i < accounts.length; i++) {
+		if (accounts[i].username === username) {
+			matchedAccount = accounts[i];
+			break;
+		}
+	}
+
+	return matchedAccount;
+}
+
 createAccount('lisa', 20);
-//createAccount({username:"karen",Balance:10});
-//createAccount({username:"karel",Balance:5});
+getAccount ('lisa');
 deposit(account, 50);
 console.log(account.Balance);
 console.log(account);
