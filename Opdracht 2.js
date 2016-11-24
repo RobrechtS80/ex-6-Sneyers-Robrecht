@@ -35,7 +35,7 @@ function getAccount (name) {
 
 	for (var i = 0; i < accounts.length; i++) {
 		if (accounts[i].username === name) {
-			matchedAccount = accounts[i].username;
+			matchedAccount = accounts[i]; //matchedAccount = accounts[i].username
                         console.log(accounts[i].username);
 			break;
 		}
@@ -52,7 +52,7 @@ withdraw(lisa_acc,15);
 console.log(getBalance(lisa_acc));
 console.log(accounts);
 
-var existingAccount = getAccount('karen');
+var existingAccount = getAccount("karen");
 console.log(getBalance(existingAccount));
 
 
