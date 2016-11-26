@@ -35,8 +35,9 @@ this.numTransactions++;
 
 var Account = function(name,balance)
 {
+    this.username=name;
     this.balance= balance;
-    this.name=name;
+    
     //functie deposit
     this.deposit = function(amount)
     {
@@ -84,13 +85,13 @@ function getBalance_std(account) {
 }
 
 //Hier pobleem wordt niet correct opgevuld omdat ik alles in name steek en dususername opvul ....
-function createAccount(name, waarde)
+function createAccount(invulling)
 {
-    var account = {};
-    account.username = name;
-    account.balance = waarde;
-    accounts.push(account);
-    return account;
+   // var account = {};
+    //account.username = name;
+    //account.balance = waarde;
+    accounts.push(invulling);
+   // return account;
 }
 
 //getaccount functie
@@ -110,7 +111,7 @@ function getAccount(name) {
 //var creatie voor func (like myfunc voorbeeld)
 var balans = getBalance();
 
-//account creator + check
+//Nezw Account --> object Account ingevuld
 var lisa_acc = new Account('lisa', 20);
 createAccount(lisa_acc);
 //var lisa_acc = createAccount('lisa', 20);
