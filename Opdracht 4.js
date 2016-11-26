@@ -110,16 +110,20 @@ function getAccount(name) {
 var balans = getBalance();
 
 //account creator + check
-var lisa_acc = createAccount('lisa', 20);
+var lisa_acc = new Account('lisa', 20);
+createAccount(lisa_acc);
+//var lisa_acc = createAccount('lisa', 20);
 console.log(accounts);
 
 //deposit,withdraw check --> ook mogelijk natuurlijk console.log(balans(lisa_acc));
 lisa_acc.deposit(60);
+
+lisa_acc.withdraw(15);
 //deposit(lisa_acc, 60);
-console.log(getBalance_std(lisa_acc));
+//console.log(getBalance_std(lisa_acc));
 //withdraw(lisa_acc, 15);
-console.log(getBalance_std(lisa_acc));
-console.log(balans(lisa_acc));
+//console.log(getBalance_std(lisa_acc));
+//console.log(balans(lisa_acc));
 
 //getAccount check
 var existingAccount = getAccount("karen");
@@ -131,7 +135,7 @@ console.log(getBalance_std(existingAccount));
 
 //validation checker withdraw
 //withdraw(lisa_acc,'bf');
-withdraw(lisa_acc, 66); // kom normaal -1 uit zien of hij zegt dat het niet klopt en gwn de vorige balance teruggeven.
+//withdraw(lisa_acc, 66); // kom normaal -1 uit zien of hij zegt dat het niet klopt en gwn de vorige balance teruggeven.
 console.log(getBalance_std(lisa_acc));
 
 console.log(balans(lisa_acc));
