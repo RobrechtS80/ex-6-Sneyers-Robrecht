@@ -114,9 +114,10 @@ var lisa_acc = createAccount('lisa', 20);
 console.log(accounts);
 
 //deposit,withdraw check --> ook mogelijk natuurlijk console.log(balans(lisa_acc));
-deposit(lisa_acc, 60);
+lisa_acc.deposit(60);
+//deposit(lisa_acc, 60);
 console.log(getBalance_std(lisa_acc));
-withdraw(lisa_acc, 15);
+//withdraw(lisa_acc, 15);
 console.log(getBalance_std(lisa_acc));
 console.log(balans(lisa_acc));
 
