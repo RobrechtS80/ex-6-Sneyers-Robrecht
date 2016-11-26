@@ -83,6 +83,7 @@ function getBalance_std(account) {
     return account.balance;
 }
 
+//Hier pobleem wordt niet correct opgevuld omdat ik alles in name steek en dususername opvul ....
 function createAccount(name, waarde)
 {
     var account = {};
