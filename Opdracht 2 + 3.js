@@ -95,7 +95,3 @@ withdraw(lisa_acc, 66); // kom normaal -1 uit zien of hij zegt dat het niet klop
 console.log(getBalance_std(lisa_acc));
 
 console.log(balans(lisa_acc));
-/*Revisit your bank account practice
-  Add a function that returns a anonymous function that returns the
- balance from the given account
- */
